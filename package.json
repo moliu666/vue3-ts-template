@@ -11,7 +11,6 @@
     "lint:style": "stylelint **/*.{vue,css,postcss}",
     "lint": "pnpm run lint:js && pnpm run lint:style",
     "lint:fix": "pnpm run lint:js --fix && pnpm run lint:style --fix",
-    "commit": "cz",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
