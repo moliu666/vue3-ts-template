@@ -1,18 +1,65 @@
-# Vue 3 + TypeScript + Vite
+# Vite + Vue 3 + Typescript Starter
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Simple and basic Vue3 engineering template
 
-## Recommended IDE Setup
++++
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Features:
 
-## Type Support For `.vue` Imports in TS
++ ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [PNPM](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) \- fast and faster !
++ 🗒  TypeScript, of course
++ 🔍 ESLint - scripts linter
++ 🔡 Stylelint - styles linter
++ 🔡 Prettier - formatter
++ ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest)
++ ☁️ Husky + lint-staged - pre-commit git hook set up for formatting
++ 📦 [Components auto importing](https://github.com/antfu/vitesse/blob/main/src/components)
++ 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Clone to local
+
++++
+
+If you prefer to do it manually with the cleaner git history
+
+```shell
+git clone https://github.com/moliu666/vue3-ts-template.git
+cd vue3-ts-template
+pnpm i
+```
+
+
+
+## Checklist
+
++++
+
+When you use this template, update the following:
+
+- Remove `.git` directory and run `git init` to clean up the history
+- Change the name in `package.json` - it will be the name of the IIFE bundle global variable and bundle files name (`.cjs`, `.mjs`, `.iife.js`, `d.ts`)
+- Change the author name in `LICENSE`
+- Clean up the `README` and `CHANGELOG` files
+
+End, enjoy :)
+
+
+
+## Usage
+
++++
+
+The starter contains the following scripts:
+
++ `dev`- start dev server, aliases: `vite dev`, `vite serve`
++ `build`- build for production
++ `preview`- locally preview production build
++ `lint:js`- lint `.ts` and `.js`and`.vue` files with eslint
++ `lint:style`-  lint `.css` and `.postcss` files with stylelint
++ `lint`- run `lint:js` and  `lint:style`
++ `lint:fix`- format all file
++ `test`- starts vitest and runs all tests
++ `coverage` - starts vitest and run all tests with code coverage report
+
